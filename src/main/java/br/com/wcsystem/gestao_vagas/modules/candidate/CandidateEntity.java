@@ -2,9 +2,11 @@ package br.com.wcsystem.gestao_vagas.modules.candidate;
 
 import java.util.UUID;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
+@Entity
 public class CandidateEntity {
     private UUID id;
     private String username;
