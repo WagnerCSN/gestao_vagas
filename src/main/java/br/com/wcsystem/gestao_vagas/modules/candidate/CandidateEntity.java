@@ -12,5 +12,9 @@ public class CandidateEntity {
     private String password;
     private String description;
     private String curriculum;
+    public CandidateEntity save(CandidateEntity candidateEntity) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'save'");
+    }
 
 }
