@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wcsystem.gestao_vagas.modules.candidate.CandidateEntity;
+import br.com.wcsystem.gestao_vagas.modules.candidate.CandidateRepository;
 
 @RestController
 @RequestMapping("/candidate")
 public class CandidateController {
     
     @Autowired
-    private CandidateEntity candidateRepository;
+    private CandidateRepository candidateRepository;
 
     @PostMapping("/")
     public CandidateEntity create(@RequestBody CandidateEntity candidateEntity){
