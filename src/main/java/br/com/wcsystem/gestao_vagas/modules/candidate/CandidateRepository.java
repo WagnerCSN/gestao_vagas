@@ -4,6 +4,6 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CanditateRepository extends JpaRepository<CandidateEntity, UUID>{
+public interface CandidateRepository extends JpaRepository<CandidateEntity, UUID>{
     
 }
