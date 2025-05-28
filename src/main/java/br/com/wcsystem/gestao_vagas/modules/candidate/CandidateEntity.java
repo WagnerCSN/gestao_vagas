@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
-@Entity
+@Entity(name = "candidate")
 public class CandidateEntity {
     private UUID id;
     private String username;
