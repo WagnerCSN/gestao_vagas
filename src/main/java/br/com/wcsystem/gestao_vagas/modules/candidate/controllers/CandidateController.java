@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wcsystem.gestao_vagas.modules.candidate.CandidateEntity;
 import br.com.wcsystem.gestao_vagas.modules.candidate.CandidateRepository;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/candidate")
@@ -17,7 +18,7 @@ public class CandidateController {
     private CandidateRepository candidateRepository;
 
     @PostMapping("/")
-    public CandidateEntity create(@RequestBody CandidateEntity candidateEntity){
+    public CandidateEntity create(@Valid @RequestBody CandidateEntity candidateEntity){
         return this.candidateRepository.save(candidateEntity);
     }
 }
