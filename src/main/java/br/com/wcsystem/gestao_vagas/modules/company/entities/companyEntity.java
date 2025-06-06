@@ -1,5 +1,6 @@
 package br.com.wcsystem.gestao_vagas.modules.company.entities;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -16,7 +17,7 @@ import lombok.Data;
 
 @Entity(name = "company")
 @Data
-public class companyEntity {
+public class CompanyEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -33,5 +34,6 @@ public class companyEntity {
     private String password;
     private String website;
 
-    private CreationTimestamp createdAt;
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 }
