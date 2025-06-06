@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.wcsystem.gestao_vagas.modules.candidate.CandidateEntity;
 import br.com.wcsystem.gestao_vagas.modules.candidate.UseCases.CreateCandidateUseCase;
+import br.com.wcsystem.gestao_vagas.modules.candidate.entities.CandidateEntity;
 import jakarta.validation.Valid;
 
 @RestController
