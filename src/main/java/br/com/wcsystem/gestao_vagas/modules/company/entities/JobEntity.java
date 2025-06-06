@@ -27,10 +27,10 @@ public class JobEntity {
     private String level;
 
     @ManyToOne
-    @JoinColumn(name = "companyId")
+    @JoinColumn(name = "company_Id")
     private CompanyEntity companyEntity;
     
-    @Column(name= "companyId")
+    @Column(name= "company_Id", insertable=false, updatable=false)
     private UUID companyID;
 
     @CreationTimestamp
